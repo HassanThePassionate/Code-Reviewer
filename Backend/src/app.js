@@ -5,7 +5,10 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://code-reviewer-zk3p.vercel.app", "http://localhost:3000/"],
+    origin: [
+      "https://code-reviewer-zk3p.vercel.app/",
+      "http://localhost:3000/",
+    ],
   })
 );
 app.get("/", (req, res) => {
